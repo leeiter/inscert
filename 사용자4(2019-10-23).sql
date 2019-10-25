@@ -1,0 +1,6 @@
+DESC tbl_books;
+
+INSERT INTO tbl_books(B_CODE, B_NAME, B_COMP, B_WRITER, B_PRICE)
+VALUES(B_CODE, B_NAME, B_COMP, B_WRITER, B_PRICE);
+
+SELECT * FROM tbl_books;
