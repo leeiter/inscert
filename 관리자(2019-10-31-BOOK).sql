@@ -1,0 +1,8 @@
+CREATE TABLESPACE book_TB
+DATAFILE 'C:/bizwork/oracle/data/book.dbf'
+SIZE 10M AUTOEXTEND ON NEXT 10K;
+
+CREATE USER book IDENTIFIED BY book
+DEFAULT TABLESPACE book_tb;
+
+GRANT DBA to book;
