@@ -1,0 +1,156 @@
+--------------------------------------------------------
+--  파일이 생성됨 - 화요일-12월-24-2019   
+--------------------------------------------------------
+--------------------------------------------------------
+--  DDL for Table TBL_CBT_DETAIL
+--------------------------------------------------------
+
+  CREATE TABLE "TBL_CBT_DETAIL" 
+   (	"D_SEQ" NUMBER, 
+	"D_CD_SEQ" NUMBER, 
+	"D_ANSWER" NVARCHAR2(1000), 
+	"D_OK" VARCHAR2(1 BYTE) DEFAULT 'N'
+   ) ;
+--------------------------------------------------------
+--  DDL for Table TBL_CBT_QUIZ
+--------------------------------------------------------
+
+  CREATE TABLE "TBL_CBT_QUIZ" 
+   (	"CB_SEQ" NUMBER, 
+	"CB_QUIZ" NVARCHAR2(1000)
+   ) ;
+REM INSERTING into TBL_CBT_DETAIL
+SET DEFINE OFF;
+Insert into TBL_CBT_DETAIL (D_SEQ,D_CD_SEQ,D_ANSWER,D_OK) values (1,1,'ERASE',null);
+Insert into TBL_CBT_DETAIL (D_SEQ,D_CD_SEQ,D_ANSWER,D_OK) values (2,1,'KILL',null);
+Insert into TBL_CBT_DETAIL (D_SEQ,D_CD_SEQ,D_ANSWER,D_OK) values (3,1,'DROP','Y');
+Insert into TBL_CBT_DETAIL (D_SEQ,D_CD_SEQ,D_ANSWER,D_OK) values (4,1,'DELETE',null);
+Insert into TBL_CBT_DETAIL (D_SEQ,D_CD_SEQ,D_ANSWER,D_OK) values (5,2,'시스템 활용도 최대화',null);
+Insert into TBL_CBT_DETAIL (D_SEQ,D_CD_SEQ,D_ANSWER,D_OK) values (6,2,'사용자에 대한 응답시간 최소화',null);
+Insert into TBL_CBT_DETAIL (D_SEQ,D_CD_SEQ,D_ANSWER,D_OK) values (7,2,'데이터베이스 공유 최소화','Y');
+Insert into TBL_CBT_DETAIL (D_SEQ,D_CD_SEQ,D_ANSWER,D_OK) values (8,2,'데이터베이스 일관성 유지',null);
+Insert into TBL_CBT_DETAIL (D_SEQ,D_CD_SEQ,D_ANSWER,D_OK) values (9,3,'이행적 함수 종속 제거','Y');
+Insert into TBL_CBT_DETAIL (D_SEQ,D_CD_SEQ,D_ANSWER,D_OK) values (10,3,'부분적 함수 종속 제거',null);
+Insert into TBL_CBT_DETAIL (D_SEQ,D_CD_SEQ,D_ANSWER,D_OK) values (11,3,'다치 종속 제거',null);
+Insert into TBL_CBT_DETAIL (D_SEQ,D_CD_SEQ,D_ANSWER,D_OK) values (12,3,'결정자이면서 후보 키가 아닌 것 제거',null);
+Insert into TBL_CBT_DETAIL (D_SEQ,D_CD_SEQ,D_ANSWER,D_OK) values (13,4,'뷰는 삽입, 삭제, 갱신 연상에 제약사항이 따른다.',null);
+Insert into TBL_CBT_DETAIL (D_SEQ,D_CD_SEQ,D_ANSWER,D_OK) values (14,4,'뷰는 데이터 접근 제어로 보안을 제공한다.',null);
+Insert into TBL_CBT_DETAIL (D_SEQ,D_CD_SEQ,D_ANSWER,D_OK) values (15,4,'뷰는 물리적으로 구현되는 테이블이다.','Y');
+Insert into TBL_CBT_DETAIL (D_SEQ,D_CD_SEQ,D_ANSWER,D_OK) values (16,4,'뷰는 데이터의 논리적 독립성을 제공한다.',null);
+Insert into TBL_CBT_DETAIL (D_SEQ,D_CD_SEQ,D_ANSWER,D_OK) values (17,5,'디지전(division)',null);
+Insert into TBL_CBT_DETAIL (D_SEQ,D_CD_SEQ,D_ANSWER,D_OK) values (18,5,'프로젝트(project)',null);
+Insert into TBL_CBT_DETAIL (D_SEQ,D_CD_SEQ,D_ANSWER,D_OK) values (19,5,'조인(join) ',null);
+Insert into TBL_CBT_DETAIL (D_SEQ,D_CD_SEQ,D_ANSWER,D_OK) values (20,5,'포크(fork)','Y');
+Insert into TBL_CBT_DETAIL (D_SEQ,D_CD_SEQ,D_ANSWER,D_OK) values (21,6,'큐(Queue) ',null);
+Insert into TBL_CBT_DETAIL (D_SEQ,D_CD_SEQ,D_ANSWER,D_OK) values (22,6,'그래프(Graph)','Y');
+Insert into TBL_CBT_DETAIL (D_SEQ,D_CD_SEQ,D_ANSWER,D_OK) values (23,6,'데크(Deque)',null);
+Insert into TBL_CBT_DETAIL (D_SEQ,D_CD_SEQ,D_ANSWER,D_OK) values (24,6,'스택(Stack)',null);
+Insert into TBL_CBT_DETAIL (D_SEQ,D_CD_SEQ,D_ANSWER,D_OK) values (25,7,'프로그램 인터럽트',null);
+Insert into TBL_CBT_DETAIL (D_SEQ,D_CD_SEQ,D_ANSWER,D_OK) values (26,7,'I/O 인터럽트',null);
+Insert into TBL_CBT_DETAIL (D_SEQ,D_CD_SEQ,D_ANSWER,D_OK) values (27,7,'외부 인터럽트','Y');
+Insert into TBL_CBT_DETAIL (D_SEQ,D_CD_SEQ,D_ANSWER,D_OK) values (28,7,'머신 체크 인터럽트',null);
+Insert into TBL_CBT_DETAIL (D_SEQ,D_CD_SEQ,D_ANSWER,D_OK) values (29,8,'channel',null);
+Insert into TBL_CBT_DETAIL (D_SEQ,D_CD_SEQ,D_ANSWER,D_OK) values (30,8,'handshaking',null);
+Insert into TBL_CBT_DETAIL (D_SEQ,D_CD_SEQ,D_ANSWER,D_OK) values (31,8,'interrupt',null);
+Insert into TBL_CBT_DETAIL (D_SEQ,D_CD_SEQ,D_ANSWER,D_OK) values (32,8,'emulation','Y');
+Insert into TBL_CBT_DETAIL (D_SEQ,D_CD_SEQ,D_ANSWER,D_OK) values (33,9,'페이징',null);
+Insert into TBL_CBT_DETAIL (D_SEQ,D_CD_SEQ,D_ANSWER,D_OK) values (34,9,'스테이징',null);
+Insert into TBL_CBT_DETAIL (D_SEQ,D_CD_SEQ,D_ANSWER,D_OK) values (35,9,'인터리빙','Y');
+Insert into TBL_CBT_DETAIL (D_SEQ,D_CD_SEQ,D_ANSWER,D_OK) values (36,9,'세그멘팅',null);
+Insert into TBL_CBT_DETAIL (D_SEQ,D_CD_SEQ,D_ANSWER,D_OK) values (37,10,'memory address register',null);
+Insert into TBL_CBT_DETAIL (D_SEQ,D_CD_SEQ,D_ANSWER,D_OK) values (38,10,'index register',null);
+Insert into TBL_CBT_DETAIL (D_SEQ,D_CD_SEQ,D_ANSWER,D_OK) values (39,10,'accumulator',null);
+Insert into TBL_CBT_DETAIL (D_SEQ,D_CD_SEQ,D_ANSWER,D_OK) values (40,10,'status register','Y');
+Insert into TBL_CBT_DETAIL (D_SEQ,D_CD_SEQ,D_ANSWER,D_OK) values (41,11,'RISC','Y');
+Insert into TBL_CBT_DETAIL (D_SEQ,D_CD_SEQ,D_ANSWER,D_OK) values (42,11,'DES Algorithm',null);
+Insert into TBL_CBT_DETAIL (D_SEQ,D_CD_SEQ,D_ANSWER,D_OK) values (43,11,'Pubic key system',null);
+Insert into TBL_CBT_DETAIL (D_SEQ,D_CD_SEQ,D_ANSWER,D_OK) values (44,11,'RSA Algorithm',null);
+Insert into TBL_CBT_DETAIL (D_SEQ,D_CD_SEQ,D_ANSWER,D_OK) values (45,12,'mv',null);
+Insert into TBL_CBT_DETAIL (D_SEQ,D_CD_SEQ,D_ANSWER,D_OK) values (46,12,'Is',null);
+Insert into TBL_CBT_DETAIL (D_SEQ,D_CD_SEQ,D_ANSWER,D_OK) values (47,12,'chmod','Y');
+Insert into TBL_CBT_DETAIL (D_SEQ,D_CD_SEQ,D_ANSWER,D_OK) values (48,12,'fork',null);
+Insert into TBL_CBT_DETAIL (D_SEQ,D_CD_SEQ,D_ANSWER,D_OK) values (49,13,'사용자 인터페이스 제공',null);
+Insert into TBL_CBT_DETAIL (D_SEQ,D_CD_SEQ,D_ANSWER,D_OK) values (50,13,'입ㆍ출력에 대한 보조역할 수행',null);
+Insert into TBL_CBT_DETAIL (D_SEQ,D_CD_SEQ,D_ANSWER,D_OK) values (51,13,'사용자들 간 하드웨어 자원의 공동 사용',null);
+Insert into TBL_CBT_DETAIL (D_SEQ,D_CD_SEQ,D_ANSWER,D_OK) values (52,13,'원시프로그램을 목적프로그램으로 변환','Y');
+Insert into TBL_CBT_DETAIL (D_SEQ,D_CD_SEQ,D_ANSWER,D_OK) values (53,14,'중단 조건(Preemption)',null);
+Insert into TBL_CBT_DETAIL (D_SEQ,D_CD_SEQ,D_ANSWER,D_OK) values (54,14,'환형 대기(Circular Wait)','Y');
+Insert into TBL_CBT_DETAIL (D_SEQ,D_CD_SEQ,D_ANSWER,D_OK) values (55,14,'기아 상태(Starvation)',null);
+Insert into TBL_CBT_DETAIL (D_SEQ,D_CD_SEQ,D_ANSWER,D_OK) values (56,14,'동기화(Synchronization)',null);
+Insert into TBL_CBT_DETAIL (D_SEQ,D_CD_SEQ,D_ANSWER,D_OK) values (57,15,'GUI기반 운영체제이다.',null);
+Insert into TBL_CBT_DETAIL (D_SEQ,D_CD_SEQ,D_ANSWER,D_OK) values (58,15,'트리 디렉터리 구조를 가진다.',null);
+Insert into TBL_CBT_DETAIL (D_SEQ,D_CD_SEQ,D_ANSWER,D_OK) values (59,15,'선점형 멀티태스킹 방식을 사용한다.',null);
+Insert into TBL_CBT_DETAIL (D_SEQ,D_CD_SEQ,D_ANSWER,D_OK) values (60,15,'소스가 공개된 개방형(Open)시스템이다.','Y');
+Insert into TBL_CBT_DETAIL (D_SEQ,D_CD_SEQ,D_ANSWER,D_OK) values (61,16,'control coupling',null);
+Insert into TBL_CBT_DETAIL (D_SEQ,D_CD_SEQ,D_ANSWER,D_OK) values (62,16,'stamp coupling','Y');
+Insert into TBL_CBT_DETAIL (D_SEQ,D_CD_SEQ,D_ANSWER,D_OK) values (63,16,'common coupling',null);
+Insert into TBL_CBT_DETAIL (D_SEQ,D_CD_SEQ,D_ANSWER,D_OK) values (64,16,'content coupling',null);
+Insert into TBL_CBT_DETAIL (D_SEQ,D_CD_SEQ,D_ANSWER,D_OK) values (65,17,'개발을 신속하게 할 수 있다.',null);
+Insert into TBL_CBT_DETAIL (D_SEQ,D_CD_SEQ,D_ANSWER,D_OK) values (66,17,'개발 방법론을 생성할 수 있다.','Y');
+Insert into TBL_CBT_DETAIL (D_SEQ,D_CD_SEQ,D_ANSWER,D_OK) values (67,17,'오류 수정이 쉬워 S/W 품질이 향상된다.',null);
+Insert into TBL_CBT_DETAIL (D_SEQ,D_CD_SEQ,D_ANSWER,D_OK) values (68,17,'S/W개발 단계의 표준화를 기할 수 있다.',null);
+Insert into TBL_CBT_DETAIL (D_SEQ,D_CD_SEQ,D_ANSWER,D_OK) values (69,18,'세션 계층',null);
+Insert into TBL_CBT_DETAIL (D_SEQ,D_CD_SEQ,D_ANSWER,D_OK) values (70,18,'네트워크 계층',null);
+Insert into TBL_CBT_DETAIL (D_SEQ,D_CD_SEQ,D_ANSWER,D_OK) values (71,18,'전송 계층','Y');
+Insert into TBL_CBT_DETAIL (D_SEQ,D_CD_SEQ,D_ANSWER,D_OK) values (72,18,'데이터 링크 계층',null);
+Insert into TBL_CBT_DETAIL (D_SEQ,D_CD_SEQ,D_ANSWER,D_OK) values (73,19,'IEEE 802.2 ',null);
+Insert into TBL_CBT_DETAIL (D_SEQ,D_CD_SEQ,D_ANSWER,D_OK) values (74,19,'IEEE 802.3',null);
+Insert into TBL_CBT_DETAIL (D_SEQ,D_CD_SEQ,D_ANSWER,D_OK) values (75,19,'IEEE 802.5 ','Y');
+Insert into TBL_CBT_DETAIL (D_SEQ,D_CD_SEQ,D_ANSWER,D_OK) values (76,19,'IEEE 802.6',null);
+Insert into TBL_CBT_DETAIL (D_SEQ,D_CD_SEQ,D_ANSWER,D_OK) values (77,20,'Broadcast','Y');
+Insert into TBL_CBT_DETAIL (D_SEQ,D_CD_SEQ,D_ANSWER,D_OK) values (78,20,'Unicast',null);
+Insert into TBL_CBT_DETAIL (D_SEQ,D_CD_SEQ,D_ANSWER,D_OK) values (79,20,'Anycast',null);
+Insert into TBL_CBT_DETAIL (D_SEQ,D_CD_SEQ,D_ANSWER,D_OK) values (80,20,'Multicast',null);
+REM INSERTING into TBL_CBT_QUIZ
+SET DEFINE OFF;
+Insert into TBL_CBT_QUIZ (CB_SEQ,CB_QUIZ) values (1,'SQL에서 VIEW를 삭제할 때 사용하는 명령은?');
+Insert into TBL_CBT_QUIZ (CB_SEQ,CB_QUIZ) values (2,'병행제어의 목적으로 옳지 않은 것은?');
+Insert into TBL_CBT_QUIZ (CB_SEQ,CB_QUIZ) values (3,'제2정규형에서 제3정규형이 되기 위한 조건은?');
+Insert into TBL_CBT_QUIZ (CB_SEQ,CB_QUIZ) values (4,'뷰에 대한 설명으로 옳지 않은 것은?');
+Insert into TBL_CBT_QUIZ (CB_SEQ,CB_QUIZ) values (5,'관계 데이터베이스에 있어서 관계 대수 연산이 아닌 것은?');
+Insert into TBL_CBT_QUIZ (CB_SEQ,CB_QUIZ) values (6,'비선형 자료 구조에 해당하는 것은?');
+Insert into TBL_CBT_QUIZ (CB_SEQ,CB_QUIZ) values (7,'다음 중 타이머에 의한 인터럽트(Interrupt)는?');
+Insert into TBL_CBT_QUIZ (CB_SEQ,CB_QUIZ) values (8,'I/O operation과 관계가 없는 것은?');
+Insert into TBL_CBT_QUIZ (CB_SEQ,CB_QUIZ) values (9,'기억장치를 각 모듈이 번갈아 가며 접근하는 방법은?');
+Insert into TBL_CBT_QUIZ (CB_SEQ,CB_QUIZ) values (10,'CPU 내부의 레지스터 중 프로그램 제어와 관계가 있는 것은?');
+Insert into TBL_CBT_QUIZ (CB_SEQ,CB_QUIZ) values (11,'CPU 내부의 레지스터 중 프로그램 제어와 관계가 있는 것은?');
+Insert into TBL_CBT_QUIZ (CB_SEQ,CB_QUIZ) values (12,'UNIX에서 파일 사용 권한 지정에 관한 명령어는?');
+Insert into TBL_CBT_QUIZ (CB_SEQ,CB_QUIZ) values (13,'운영체제의 역할로 가장 옳지 않은 것은?');
+Insert into TBL_CBT_QUIZ (CB_SEQ,CB_QUIZ) values (14,'다음 중 교착상태가 발생할 수 있는 필요충분조건은?');
+Insert into TBL_CBT_QUIZ (CB_SEQ,CB_QUIZ) values (15,'Microsoft의 Windows 운영체제의 특징이 아닌 것은?');
+Insert into TBL_CBT_QUIZ (CB_SEQ,CB_QUIZ) values (16,'다음 중 독립적인 모듈이 되기 위해서 가장 좋은 결합도 상태는?');
+Insert into TBL_CBT_QUIZ (CB_SEQ,CB_QUIZ) values (17,'CASE가 제공하는 기능으로 거리가 먼 것은?');
+Insert into TBL_CBT_QUIZ (CB_SEQ,CB_QUIZ) values (18,'OSI 7계층에서 TCP는 어떤 계층에 해당되는가?');
+Insert into TBL_CBT_QUIZ (CB_SEQ,CB_QUIZ) values (19,'토큰링 방식에 사용되는 네트워크 표준안은?');
+Insert into TBL_CBT_QUIZ (CB_SEQ,CB_QUIZ) values (20,'IPv6의 주소체계에 해당하지 않는 것은?');
+--------------------------------------------------------
+--  DDL for Index SYS_C007199
+--------------------------------------------------------
+
+  CREATE UNIQUE INDEX "SYS_C007199" ON "TBL_CBT_DETAIL" ("D_SEQ") 
+  ;
+--------------------------------------------------------
+--  DDL for Index SYS_C007196
+--------------------------------------------------------
+
+  CREATE UNIQUE INDEX "SYS_C007196" ON "TBL_CBT_QUIZ" ("CB_SEQ") 
+  ;
+--------------------------------------------------------
+--  Constraints for Table TBL_CBT_DETAIL
+--------------------------------------------------------
+
+  ALTER TABLE "TBL_CBT_DETAIL" ADD PRIMARY KEY ("D_SEQ") ENABLE;
+  ALTER TABLE "TBL_CBT_DETAIL" MODIFY ("D_ANSWER" NOT NULL ENABLE);
+  ALTER TABLE "TBL_CBT_DETAIL" MODIFY ("D_CD_SEQ" NOT NULL ENABLE);
+--------------------------------------------------------
+--  Constraints for Table TBL_CBT_QUIZ
+--------------------------------------------------------
+
+  ALTER TABLE "TBL_CBT_QUIZ" ADD PRIMARY KEY ("CB_SEQ") ENABLE;
+  ALTER TABLE "TBL_CBT_QUIZ" MODIFY ("CB_QUIZ" NOT NULL ENABLE);
+--------------------------------------------------------
+--  Ref Constraints for Table TBL_CBT_DETAIL
+--------------------------------------------------------
+
+  ALTER TABLE "TBL_CBT_DETAIL" ADD CONSTRAINT "FK_CBT" FOREIGN KEY ("D_CD_SEQ")
+	  REFERENCES "TBL_CBT_QUIZ" ("CB_SEQ") ENABLE;

@@ -1,0 +1,27 @@
+--------------------------------------------------------
+--  파일이 생성됨 - 화요일-12월-24-2019   
+--------------------------------------------------------
+--------------------------------------------------------
+--  DDL for View VIEW_RENT
+--------------------------------------------------------
+
+  CREATE OR REPLACE FORCE VIEW "VIEW_RENT" ("RENT_SEQ", "RENT_DATE", "RENT_RETURN_DATE", "B_CODE", "B_NAME", "U_CODE", "U_NAME", "RENT_RETUR_YN") AS 
+  (
+    SELECT
+        RB.RENT_SEQ,
+        RB.RENT_DATE,
+        RB.RENT_RETURN_DATE,
+        B.B_CODE,
+        B.B_NAME,	
+        U.U_CODE,
+        U.U_NAME,
+        RB.RENT_RETUR_YN
+    FROM tbl_rent_book RB
+        LEFT JOIN tbl_books B
+            ON RB.RENT_BCODE = B.B_CODE
+        LEFT JOIN tbl_users U
+            ON RB.RENT_UCODE = U.U_CODE
+)
+;
+REM INSERTING into VIEW_RENT
+SET DEFINE OFF;

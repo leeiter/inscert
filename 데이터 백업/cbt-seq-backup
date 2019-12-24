@@ -1,0 +1,33 @@
+--------------------------------------------------------
+--  파일이 생성됨 - 화요일-12월-24-2019   
+--------------------------------------------------------
+--------------------------------------------------------
+--  DDL for Sequence SEQ_CBT
+--------------------------------------------------------
+
+   CREATE SEQUENCE  "SEQ_CBT"  MINVALUE 1 MAXVALUE 9999999999999999999999999999 INCREMENT BY 1 START WITH 1 CACHE 20 NOORDER  NOCYCLE ;
+--------------------------------------------------------
+--  DDL for Sequence SEQ_CBTA
+--------------------------------------------------------
+
+   CREATE SEQUENCE  "SEQ_CBTA"  MINVALUE 1 MAXVALUE 9999999999999999999999999999 INCREMENT BY 1 START WITH 1 CACHE 20 NOORDER  NOCYCLE ;
+--------------------------------------------------------
+--  DDL for Sequence SEQ_CBTDETAIL
+--------------------------------------------------------
+
+   CREATE SEQUENCE  "SEQ_CBTDETAIL"  MINVALUE 1 MAXVALUE 9999999999999999999999999999 INCREMENT BY 1 START WITH 1 CACHE 20 NOORDER  NOCYCLE ;
+--------------------------------------------------------
+--  DDL for Sequence SEQ_CBTLIST
+--------------------------------------------------------
+
+   CREATE SEQUENCE  "SEQ_CBTLIST"  MINVALUE 1 MAXVALUE 9999999999999999999999999999 INCREMENT BY 1 START WITH 1 CACHE 20 NOORDER  NOCYCLE ;
+--------------------------------------------------------
+--  DDL for Sequence SEQ_CBTLISTA
+--------------------------------------------------------
+
+   CREATE SEQUENCE  "SEQ_CBTLISTA"  MINVALUE 1 MAXVALUE 9999999999999999999999999999 INCREMENT BY 1 START WITH 1 CACHE 20 NOORDER  NOCYCLE ;
+--------------------------------------------------------
+--  DDL for Sequence SEQ_CBTQUIZ
+--------------------------------------------------------
+
+   CREATE SEQUENCE  "SEQ_CBTQUIZ"  MINVALUE 1 MAXVALUE 9999999999999999999999999999 INCREMENT BY 1 START WITH 1 CACHE 20 NOORDER  NOCYCLE ;
